@@ -11,4 +11,17 @@ file:./load-file/test2.html
 - One way to make it work is with a local server
 - Chrome plug in webserver Web Server for Chrome
 - npm http_server
+** test3.html
+- Stripped highlight.js part and focused on loading, no errors on
+  loading the page
 
+* dynamic-insertion
+This deals with adding elements to web page, in order to break down
+the potential problem of load-file.
+** test4.html
+- someElement.insertAdjacentHTML(<position>,<text-added>)
+** test5.html
+- dynamic insertion within a function
+- Added window.onLoad function
+** test6.html
+- 
