@@ -1,0 +1,14 @@
+# -*- mode: org -*-
+#+STARTUP: indent hidestars showall
+
+* load-file
+This is a series of attempts at highlight.js on a local file.
+** test2.html
+file:./load-file/test2.html
+- Trying to load with XMLHttpRequest()
+- This fundamentally doesn't work because this is intended to load a
+  file from the server side
+- One way to make it work is with a local server
+- Chrome plug in webserver Web Server for Chrome
+- npm http_server
+

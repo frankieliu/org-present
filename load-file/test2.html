@@ -1,0 +1,24 @@
+<link
+  rel="stylesheet"
+  href="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/styles/agate.min.css">
+<script
+  src="http://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.12.0/build/highlight.min.js">
+</script>
+<div name="div1"></div>
+<script>
+function load() {
+    var file = new XMLHttpRequest();
+    file.open("GET", "./test2.py", true);
+    file.onreadystatechange = function() {
+      if (file.readyState === 4) {  // Makes sure the document is ready to parse
+        if (file.status === 200) {  // Makes sure it's found the file
+          text = file.responseText;
+          document.getElementById("div1").innerHTML = text;
+        }
+      }
+    }
+}
+
+window.onLoad = load();
+hljs.initHighlightingOnLoad();
+</script>
