@@ -24,4 +24,19 @@ the potential problem of load-file.
 - dynamic insertion within a function
 - Added window.onLoad function
 ** test6.html
-- 
+- more dynamic adding ing +=
+* multi-mode
+The main reason I explored the above two sections is to have emacs
+deal with language specific code in a separate file, and have that
+filed added to the html containing the highlight.js for
+fontification.
+
+But if there is a way to edit in the html code, then I don't need to
+create a separate file and to someone automatically include it.
+
+** test7.html
+- working version with python code included, with multi-web-mode
+  looking at # --python-start-- : this is the trigger to use python
+  mode and can be set from within .emacs when editin html files
+- this was successful but it doesn't quite feel the same environment
+  on this little section
